@@ -20,9 +20,9 @@ def extract_context_words(args):
             d_head = max(0, i - d)
             d_tail = min(len(word_list), i + d + 1)
 
-            args.output_file.write('\t'.join([t,
-                                              ' '.join(word_list[d_head:i]),
-                                              ' '.join(word_list[i+1:d_tail])]) + '\n')
+            for c in word_list[d_head:i] + word_list[i+1:d_tail]:
+                args.output_file.write('\t'.join([t, c]) + '\n')
+
 
 def arg_parse():
     parser = argparse.ArgumentParser()
