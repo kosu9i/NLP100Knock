@@ -2,7 +2,7 @@
 http://www.cl.ecei.tohoku.ac.jp/nlp100/
 をやってみる。
 
-* scripts/chapter\*
+* scripts/chapter
     http://www.cl.ecei.tohoku.ac.jp/nlp100/
     のスクリプト
 
